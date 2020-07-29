@@ -7,7 +7,7 @@ const ContactContent = ({ styles }) => {
     borderBottom: "5vh solid #00363a",
     borderRight: "5vh solid #00363a",
     borderLeft: "2vh solid #00363a",
-    marginLeft: '35vh',
+    marginLeft: '20%',
     flex: '1',
     display: 'flex',
     flexDirection: 'row',

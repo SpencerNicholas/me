@@ -2,9 +2,10 @@ import React from "react";
 import App from "../App";
 import store from '../app/store';
 import { useSelector, useDispatch } from 'react-redux';
-import { setPage, selectPage } from './navigation'
+import { setPage, selectPage, selectHover, setHover } from './navigation'
 
 const Sidebar = ({ }) => {
+  const hovering = useSelector(selectHover);
   const page = useSelector(selectPage);
   const dispatch = useDispatch();
 
@@ -45,21 +46,30 @@ const Sidebar = ({ }) => {
     { text: "Contact", active: 6 }
   ];
 
-  
+
+
 
   return (
     <div style={sidebarStyle}>
       {menuItems.map((item, i) => (
-        <div key={i} style={menuItemStyle} onClick={() => {dispatch(setPage(item.text)) }}>
+        <div key={i} style={menuItemStyle} onClick={() => { dispatch(setPage(item.text)) }}>
           {item.active === (page) ? (
             <div style={activeMenuItemStyle}>
               {item.text}
             </div>
           ) : (
-              <div>
-                {item.text}
+              <div onMouseOver={() => { dispatch(setHover(item.text)) }} onMouseLeave={() => { dispatch(setHover())}}>
+                {item.active === (hovering) ? (
+                  <div style={{ color: 'lightgrey', cursor: 'pointer' }}>
+                    {item.text}
+                  </div>
+                ) : (
+                    <div>
+                      {item.text}
+                    </div>)}
+            
               </div>
-            )}
+          )}
         </div>
       ))}
     </div>
