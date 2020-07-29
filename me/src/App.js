@@ -1,17 +1,24 @@
-import React, { Component } from 'react';
-import { createStore } from 'redux';
-import Sidebar from "./components/Sidebar";
-import HomeContent  from "./components/content/HomeContent.js";
+import React, { Component, useEffect, useState  } from 'react';
+import Sidebar from "./components/navigation/Sidebar";
+import MobileTopbar from "./components/navigation/MobileTopbar";
+
+import HomeContent  from "./components/content/HomeContent";
 import ExperienceContent from "./components/content/ExperienceContent";
 import EducationContent from "./components/content/EducationContent";
 import SkillsContent from "./components/content/SkillsContent";
 import PortfolioContent from "./components/content/PortfolioContent";
 import ContactContent from "./components/content/ContactContent";
-import { useSelector } from 'react-redux';
-import { selectPage } from './components/navigation'
+
+import { useSelector, useDispatch } from 'react-redux';
+import { selectPage } from './components/navigation/navigation'
+import { selectWidth, selectHeight, setWidth, setHeight } from './components/responsive/responsiveSlice'
 import './App.css';
 
 const App = ({ }) => {
+  const width = useSelector(selectWidth);
+  const height = useSelector(selectHeight);
+  const dispatch = useDispatch();
+
   const styles = {
     white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
     black: (opacity = 1) => `#00363A`,
@@ -19,7 +26,20 @@ const App = ({ }) => {
     footerMenuHeight: 50,
   };
 
-  const page = useSelector(selectPage);
+  /**
+   * This function runs when the component is loaded. I am using it to get the width a height of the display
+   * for resizing the display between mobile and desktop
+   */
+  React.useEffect(() => {
+    dispatch(setWidth());
+    dispatch(setHeight());
+    window.addEventListener('resize', handleResize, false)
+    function handleResize() {
+      dispatch(setWidth())
+    }
+  });
+
+  
 
   return (
     <div
@@ -28,8 +48,12 @@ const App = ({ }) => {
         minHeight: "100vh",
         position: "relative"
       }}>
-      <Sidebar />
-      {page === 1 ? (
+        {width > 1000 ? (
+          <Sidebar /> 
+        ) : (
+          <MobileTopbar/>
+        )}
+      {/* {page === 1 ? (
         <HomeContent styles={styles} />
       ) : page === 2 ? (
         <ExperienceContent styles={styles} />
@@ -43,7 +67,7 @@ const App = ({ }) => {
         <ContactContent styles={styles} />
       ) : (
                     <HomeContent styles={styles} />
-                  )}
+                  )} */}
     </div>
   );
 }

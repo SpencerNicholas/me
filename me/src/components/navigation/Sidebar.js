@@ -1,6 +1,4 @@
 import React from "react";
-import App from "../App";
-import store from '../app/store';
 import { useSelector, useDispatch } from 'react-redux';
 import { setPage, selectPage, selectHover, setHover } from './navigation'
 

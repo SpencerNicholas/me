@@ -5,6 +5,7 @@ export const navigationSlice = createSlice({
     initialState: {
         page: 1,
         hover: false,
+        menu: false,
     },
     reducers: {
         setPage: (state, action) => {
@@ -31,7 +32,7 @@ export const navigationSlice = createSlice({
                     state.page = 1;
             }
         },
-        setHover: (state, action)=>{
+        setHover: (state, action) => {
             switch (action.payload) {
                 case 'Home':
                     state.hover = 1;
@@ -54,14 +55,19 @@ export const navigationSlice = createSlice({
                 default:
                     state.hover = 0;
             }
-        }
+        },
+        setMenuOpen: (state, action) => {
+            state.menu = action.payload;
+        },
     },
 });
 
-export const { setPage, setHover } = navigationSlice.actions;
+export const { setPage, setHover, setMenuOpen } = navigationSlice.actions;
 
 export const selectPage = state => state.navigation.page;
 
 export const selectHover = state => state.navigation.hover;
+
+export const selectMenu = state => state.navigation.menu;
 
 export default navigationSlice.reducer;
