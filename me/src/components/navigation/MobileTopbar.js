@@ -59,7 +59,6 @@ const MobileTopbar = ({ }) => {
     alignItems: "center",
     color: 'white',
     fontSize: '24px',
-    fontWeight: "bold",
   }
 
   const footerStyle = {
@@ -83,11 +82,11 @@ const MobileTopbar = ({ }) => {
   }
 
   const menuItems = [
-    { text: "About", active: 1 },
-    { text: "Experience", active: 2 },
-    { text: "Education", active: 3 },
-    { text: "Skills", active: 4 },
-    { text: "Portfolio", active: 5 }
+    { text: "ABOUT", active: 1 },
+    { text: "EXPERIENCE", active: 2 },
+    { text: "EDUCATION", active: 3 },
+    { text: "SKILLS", active: 4 },
+    { text: "PORTFOLIO", active: 5 }
   ];
 
 

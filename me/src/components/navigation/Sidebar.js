@@ -18,6 +18,8 @@ const Sidebar = ({ }) => {
     backgroundColor: "#428e92",
     borderBottom: "5vh solid #006064",
     borderTop: "5vh solid #006064",
+    borderRight: "3px solid #00363a",
+    borderLeft: "3px solid #00363a",
     alignItems: "center",
     justifyContent: 'center',
     flex: '1',
@@ -32,11 +34,11 @@ const Sidebar = ({ }) => {
     padding: `2vh`,
     color: 'white',
     fontSize: '24px',
-    fontWeight: "bold",
   };
 
   const activeMenuItemStyle = {
-    borderBottom: '3px solid red'
+    // borderBottom: '3px solid red'
+    color: '#b71c1c'
   }
 
   const footerStyle = {
@@ -55,16 +57,17 @@ const Sidebar = ({ }) => {
 
   const iconHovered = {
     fontSize: '32px',
-    color: 'red',
+    color: '#b71c1c',
     cursor: 'pointer',
+    transition: 'color 0.5s',
   }
 
   const menuItems = [
-    { text: "About", active: 1 },
-    { text: "Experience", active: 2 },
-    { text: "Education", active: 3 },
-    { text: "Skills", active: 4 },
-    { text: "Portfolio", active: 5 }
+    { text: "ABOUT", active: 1 },
+    { text: "EXPERIENCE", active: 2 },
+    { text: "EDUCATION", active: 3 },
+    { text: "SKILLS", active: 4 },
+    { text: "PORTFOLIO", active: 5 }
   ];
 
 
@@ -81,7 +84,7 @@ const Sidebar = ({ }) => {
           ) : (
               <div onMouseOver={() => { dispatch(setHover(item.text)) }} onMouseLeave={() => { dispatch(setHover())}}>
                 {item.active === (hovering) ? (
-                  <div style={{ color: 'lightgrey', cursor: 'pointer' }}>
+                  <div style={{ color: '#b71c1c', cursor: 'pointer', transition: 'color 0.5s', }}>
                     {item.text}
                   </div>
                 ) : (

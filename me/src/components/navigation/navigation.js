@@ -10,23 +10,20 @@ export const navigationSlice = createSlice({
     reducers: {
         setPage: (state, action) => {
             switch (action.payload) {
-                case 'Home':
+                case 'ABOUT':
                     state.page = 1;
                     break;
-                case 'Experience':
+                case 'EXPERIENCE':
                     state.page = 2;
                     break;
-                case 'Education':
+                case 'EDUCATION':
                     state.page = 3;
                     break;
-                case 'Skills':
+                case 'SKILLS':
                     state.page = 4;
                     break;
-                case 'Portfolio':
+                case 'PORTFOLIO':
                     state.page = 5;
-                    break;
-                case 'Contact':
-                    state.page = 6;
                     break;
                 default:
                     state.page = 1;
@@ -34,19 +31,19 @@ export const navigationSlice = createSlice({
         },
         setHover: (state, action) => {
             switch (action.payload) {
-                case 'About':
+                case 'ABOUT':
                     state.hover = 1;
                     break;
-                case 'Experience':
+                case 'EXPERIENCE':
                     state.hover = 2;
                     break;
-                case 'Education':
+                case 'EDUCATION':
                     state.hover = 3;
                     break;
-                case 'Skills':
+                case 'SKILLS':
                     state.hover = 4;
                     break;
-                case 'Portfolio':
+                case 'PORTFOLIO':
                     state.hover = 5;
                     break;
                 case 'LinkedIn':
@@ -60,6 +57,12 @@ export const navigationSlice = createSlice({
                     break;
                 case 'GitHub':
                     state.hover = 9;
+                    break;
+                case 'DownArrow':
+                    state.hover = 10;
+                    break;
+                case 'UpArrow':
+                    state.hover = 11;
                     break;
                 default:
                     state.hover = 0;
