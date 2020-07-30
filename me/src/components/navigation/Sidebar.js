@@ -1,6 +1,10 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { setPage, selectPage, selectHover, setHover } from './navigation'
+import LinkedIn from '@material-ui/icons/LinkedIn';
+import Instagram from '@material-ui/icons/Instagram';
+import Twitter from '@material-ui/icons/Twitter';
+import GitHub from '@material-ui/icons/GitHub';
 
 const Sidebar = ({ }) => {
   const hovering = useSelector(selectHover);
@@ -35,13 +39,32 @@ const Sidebar = ({ }) => {
     borderBottom: '3px solid red'
   }
 
+  const footerStyle = {
+    color: 'white',
+    flexDirection: 'row',
+    position: 'absolute',
+    bottom: '1vh',
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-evenly'
+  }
+
+  const iconStyle = {
+    fontSize: '32px',
+  }
+
+  const iconHovered = {
+    fontSize: '32px',
+    color: 'red',
+    cursor: 'pointer',
+  }
+
   const menuItems = [
-    { text: "Home", active: 1 },
+    { text: "About", active: 1 },
     { text: "Experience", active: 2 },
     { text: "Education", active: 3 },
     { text: "Skills", active: 4 },
-    { text: "Portfolio", active: 5 },
-    { text: "Contact", active: 6 }
+    { text: "Portfolio", active: 5 }
   ];
 
 
@@ -70,6 +93,36 @@ const Sidebar = ({ }) => {
           )}
         </div>
       ))}
+      <div style={footerStyle}>
+        <div onMouseOver={() => { dispatch(setHover("LinkedIn"))}} onMouseLeave={() => { dispatch(setHover())}} onClick={() => { window.open("https://linkedin.com/in/spencer-nicholas", "_blank")}}>
+                  {(hovering) === 6 ? (
+                     <LinkedIn style={iconHovered} ></LinkedIn>
+                  ) : (
+                    <LinkedIn style={iconStyle} ></LinkedIn>
+                  )}
+        </div>
+        <div onMouseOver={() => { dispatch(setHover("Instagram"))}} onMouseLeave={() => { dispatch(setHover())}} onClick={() => { window.open("https://www.instagram.com/spencerndev/?hl=en", "_blank")}}>
+                  {(hovering) === 7 ? (
+                     <Instagram style={iconHovered}></Instagram>
+                  ) : (
+                    <Instagram style={iconStyle}></Instagram>
+                  )}
+        </div>
+        <div onMouseOver={() => { dispatch(setHover("Twitter"))}} onMouseLeave={() => { dispatch(setHover())}} onClick={() => { window.open("https://twitter.com/SpencerNDev", "_blank")}}>
+                  {(hovering) === 8 ? (
+                     <Twitter style={iconHovered}></Twitter>
+                  ) : (
+                    <Twitter style={iconStyle}></Twitter>
+                  )}
+        </div>
+        <div onMouseOver={() => { dispatch(setHover("GitHub"))}} onMouseLeave={() => { dispatch(setHover())}} onClick={() => { window.open("https://github.com/SpencerNicholas", "_blank")}}>
+                  {(hovering) === 9 ? (
+                     <GitHub style={iconHovered}></GitHub>
+                  ) : (
+                    <GitHub style={iconStyle}></GitHub>
+                  )}
+        </div>
+      </div>
     </div>
   );
 };

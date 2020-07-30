@@ -34,7 +34,7 @@ export const navigationSlice = createSlice({
         },
         setHover: (state, action) => {
             switch (action.payload) {
-                case 'Home':
+                case 'About':
                     state.hover = 1;
                     break;
                 case 'Experience':
@@ -49,8 +49,17 @@ export const navigationSlice = createSlice({
                 case 'Portfolio':
                     state.hover = 5;
                     break;
-                case 'Contact':
+                case 'LinkedIn':
                     state.hover = 6;
+                    break;
+                case 'Instagram':
+                    state.hover = 7;
+                    break;
+                case 'Twitter':
+                    state.hover = 8;
+                    break;
+                case 'GitHub':
+                    state.hover = 9;
                     break;
                 default:
                     state.hover = 0;

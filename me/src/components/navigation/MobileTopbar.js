@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { setPage, selectPage, selectHover, setHover, setMenuOpen, selectMenu } from './navigation'
-import AccessAlarmIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/icons/Menu';
 
 const MobileTopbar = ({ }) => {
@@ -58,12 +57,11 @@ const MobileTopbar = ({ }) => {
   }
 
   const menuItems = [
-    { text: "Home", active: 1 },
+    { text: "About", active: 1 },
     { text: "Experience", active: 2 },
     { text: "Education", active: 3 },
     { text: "Skills", active: 4 },
-    { text: "Portfolio", active: 5 },
-    { text: "Contact", active: 6 }
+    { text: "Portfolio", active: 5 }
   ];
 
 
