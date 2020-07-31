@@ -1,12 +1,18 @@
-import React, { Component, useEffect, useState  } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import Sidebar from "./components/navigation/Sidebar";
 import MobileTopbar from "./components/navigation/MobileTopbar";
 
-import AboutContent  from "./components/content/AboutContent";
+import AboutContent from "./components/content/AboutContent";
 import ExperienceContent from "./components/content/ExperienceContent";
 import EducationContent from "./components/content/EducationContent";
 import SkillsContent from "./components/content/SkillsContent";
 import PortfolioContent from "./components/content/PortfolioContent";
+
+import AboutContentMobile from "./components/content/mobile/AboutMobile";
+import ExperienceContentMobile from "./components/content/mobile/ExperienceMobile";
+import EducationContentMobile from "./components/content/mobile/EducationMobile";
+import SkillsContentMobile from "./components/content/mobile/SkillsMobile";
+import PortfolioContentMobile from "./components/content/mobile/PortfolioMobile";
 
 import { useSelector, useDispatch } from 'react-redux';
 import { selectPage } from './components/navigation/navigation'
@@ -39,7 +45,7 @@ const App = ({ }) => {
     }
   });
 
-  
+
 
   return (
     <div
@@ -48,24 +54,34 @@ const App = ({ }) => {
         minHeight: "100vh",
         position: "relative"
       }}>
-        {width > 1000 ? (
-          <Sidebar /> 
-        ) : (
-          <MobileTopbar/>
-        )}
-      {page === 1 ? (
-        <AboutContent styles={styles} />
-      ) : page === 2 ? (
-        <ExperienceContent styles={styles} />
-      ) : page === 3 ? (
-        <EducationContent styles={styles} />
-      ) : page === 4 ? (
-        <SkillsContent styles={styles} />
-      ) : page === 5 ? (
-        <PortfolioContent styles={styles} />
+      {width > 1000 ? (
+        <Sidebar />
       ) : (
-                    <AboutContent styles={styles} />
-                  )}
+          <MobileTopbar />
+        )}
+      {(page === 1 && width > 1000) ? (
+        <AboutContent styles={styles} />
+      ) : (page === 1 && width < 1000) ? (
+        <AboutContentMobile styles={styles} />
+      ) : (page === 2 && width > 1000) ? (
+        <ExperienceContent styles={styles} />
+      ) : (page === 2 && width < 1000) ? (
+        <ExperienceContentMobile styles={styles} />
+      ) : (page === 3 && width > 1000) ? (
+        <EducationContent styles={styles} />
+      ) : (page === 3 && width < 1000) ? (
+        <EducationContentMobile styles={styles} />
+      ) : (page === 4 && width > 1000) ? (
+        <SkillsContent styles={styles} />
+      ) : (page === 4 && width < 1000) ? (
+        <SkillsContentMobile styles={styles} />
+      ) : (page === 5 && width > 1000) ? (
+        <PortfolioContent styles={styles} />
+      ) : (page === 5 && width < 1000) ? (
+        <PortfolioContentMobile styles={styles} />
+      ) : (
+                            <AboutContentMobile styles={styles} />
+                          )}
     </div>
   );
 }

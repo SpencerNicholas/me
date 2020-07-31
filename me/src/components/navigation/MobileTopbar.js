@@ -46,7 +46,6 @@ const MobileTopbar = ({ }) => {
     padding: `2vh`,
     color: 'white',
     fontSize: '24px',
-    fontWeight: "bold",
   };
 
   const activeMenuItemStyle = {
