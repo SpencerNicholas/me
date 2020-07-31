@@ -58,11 +58,8 @@ export const navigationSlice = createSlice({
                 case 'GitHub':
                     state.hover = 9;
                     break;
-                case 'DownArrow':
+                case 'contactDetails':
                     state.hover = 10;
-                    break;
-                case 'UpArrow':
-                    state.hover = 11;
                     break;
                 default:
                     state.hover = 0;
