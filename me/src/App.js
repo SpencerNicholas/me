@@ -18,6 +18,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { selectPage } from './components/navigation/navigation'
 import { selectWidth, selectHeight, setWidth, setHeight } from './components/responsive/responsiveSlice'
 import './App.css';
+import Topbar from './components/navigation/Topbar';
 
 const App = ({ }) => {
   const page = useSelector(selectPage);
@@ -55,7 +56,7 @@ const App = ({ }) => {
         position: "relative"
       }}>
       {width > 1000 ? (
-        <Sidebar />
+        <Topbar />
       ) : (
           <MobileTopbar />
         )}

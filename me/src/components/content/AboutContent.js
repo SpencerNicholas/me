@@ -19,13 +19,14 @@ const AboutContent = ({ styles }) => {
   const contentStyle = {
     paddingTop: '5vh',
     paddingBottom: '5vh',
-    paddingLeft: '15%',
     flex: '1',
     display: 'flex',
     flexDirection: 'row',
-    background: 'linear-gradient(to right, lightgray, white)',
+    background: 'linear-gradient(to right, white, white)',
     height: '90vh',
     color: '#00363a',
+    paddingLeft: '10%',
+    paddingRight: '10%'
   };
 
   const columnStyle = {
@@ -46,7 +47,7 @@ const AboutContent = ({ styles }) => {
     width: '40%',
     textAlign: 'left',
     marginLeft: '5%',
-    height: '80%',
+    height: '80vh',
     justifyContent: 'space-evenly',
   }
 
@@ -64,10 +65,9 @@ const AboutContent = ({ styles }) => {
       <div style={columnStyle}>
         <div style={{ position: 'absolute', top: '15vh', width: '40%' }}>
           <text style={{ fontSize: '58px', fontWeight: 'bold', }}>Spencer Nicholas</text><br></br>
-          <text style={{ fontSize: '32px', fontWeight: 'bold', }}>Web Developer</text><br></br><br></br>
-        </div>
-        <div style={{ position: 'absolute', bottom: '15vh', width: '40%' }}>
-          <img src={mePic} style={{paddingBottom: '5%'}}></img><br></br>
+          <text style={{ fontSize: '32px', fontWeight: 'bold', }}>Web Developer</text><br></br>
+        
+          <img src={mePic} style={{paddingBottom: '5%', paddingTop: '10%'}}></img><br></br>
           <text style={{ fontSize: '32px', fontWeight: 'bold', }}> Who am I?</text><br></br><br></br>
           <div style={{ paddingLeft: '15%', paddingRight: '15%', }}>
             <text>
