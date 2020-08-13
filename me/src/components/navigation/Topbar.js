@@ -23,7 +23,7 @@ const Topbar = ({ }) => {
     flex: '1',
     display: 'flex',
     flexDirection: 'row',
-    paddingLeft: '15%',
+    paddingLeft: '12%',
     alignItems: 'center',
     zIndex: '10',
     userSelect: 'none',
@@ -33,7 +33,7 @@ const Topbar = ({ }) => {
     display: "flex",
     justifyContent: "left",
     alignItems: "left",
-    paddingLeft: `3%`,
+    paddingRight: `3%`,
     color: 'white',
     fontSize: '18px',
   };

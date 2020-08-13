@@ -5,7 +5,7 @@ import Copy from '@material-ui/icons/FileCopy';
 import Web from '@material-ui/icons/Web';
 import Mobile from '@material-ui/icons/PhoneAndroid';
 import Uni from '@material-ui/icons/School';
-import Travel from '@material-ui/icons/Flight';
+
 
 
 

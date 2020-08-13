@@ -16,7 +16,7 @@ import PortfolioContentMobile from "./components/content/mobile/PortfolioMobile"
 
 import { useSelector, useDispatch } from 'react-redux';
 import { selectPage } from './components/navigation/navigation'
-import { selectWidth, selectHeight, setWidth, setHeight } from './components/responsive/responsiveSlice'
+import { selectWidth, selectHeight, setWidth, setHeight } from './components/redux/responsiveSlice'
 import './App.css';
 import Topbar from './components/navigation/Topbar';
 
