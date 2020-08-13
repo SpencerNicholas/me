@@ -5,7 +5,7 @@ import Copy from '@material-ui/icons/FileCopy';
 import Web from '@material-ui/icons/Web';
 import Mobile from '@material-ui/icons/PhoneAndroid';
 import Uni from '@material-ui/icons/School';
-import Travel from '@material-ui/icons/Flight';
+import WebDev from '@material-ui/icons/WebAsset';
 
 
 
@@ -85,6 +85,10 @@ const AboutContent = ({ styles }) => {
           <text style={{ fontSize: '32px', fontWeight: 'bold', paddingLeft: '3%'}}> Intuative & Responsive Web Design</text>
           </div>
           <div style={{display: 'flex',  alignItems: 'center',}}>
+          <WebDev style={{ fontSize: '64px', backgroundColor: '#00363a', color: 'white', padding: '2%' }}></WebDev>
+          <text style={{ fontSize: '32px', fontWeight: 'bold', paddingLeft: '3%'}}> React Web Development</text>
+          </div>
+          <div style={{display: 'flex',  alignItems: 'center',}}>
           <Mobile style={{ fontSize: '64px', backgroundColor: '#00363a', color: 'white', padding: '2%' }}></Mobile>
           <text style={{ fontSize: '32px', fontWeight: 'bold', paddingLeft: '3%'}}> React Native App Development</text>
           </div>
@@ -92,10 +96,7 @@ const AboutContent = ({ styles }) => {
           <Uni style={{ fontSize: '64px', backgroundColor: '#00363a', color: 'white', padding: '2%' }}></Uni>
           <text style={{ fontSize: '32px', fontWeight: 'bold', paddingLeft: '3%'}}> Computer Science Graduate</text>
           </div>
-          <div style={{display: 'flex',  alignItems: 'center',}}>
-          <Travel style={{ fontSize: '64px', backgroundColor: '#00363a', color: 'white', padding: '2%' }}></Travel>
-          <text style={{ fontSize: '32px', fontWeight: 'bold', paddingLeft: '3%'}}> Globetrotter</text>
-          </div>
+        
 
           <div style={{display: 'flex',  alignItems: 'center',}} onMouseOver={() => { dispatch(setHover("contactDetails"))}} onMouseLeave={() => { dispatch(setHover())}}>
           {(hovering) === 10 ? (

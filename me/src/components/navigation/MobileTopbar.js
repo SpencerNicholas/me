@@ -46,7 +46,7 @@ const MobileTopbar = ({ }) => {
     alignItems: "center",
     padding: `2vh`,
     color: 'white',
-    fontSize: '24px',
+    fontSize: '5vw',
   };
 
   const activeMenuItemStyle = {
@@ -58,7 +58,7 @@ const MobileTopbar = ({ }) => {
     justifyContent: "center",
     alignItems: "center",
     color: 'white',
-    fontSize: '24px',
+    fontSize: '6vw',
   }
 
   const footerStyle = {
@@ -72,13 +72,7 @@ const MobileTopbar = ({ }) => {
   }
 
   const iconStyle = {
-    fontSize: '32px',
-  }
-
-  const iconHovered = {
-    fontSize: '32px',
-    color: 'red',
-    cursor: 'pointer',
+    fontSize: '7vw',
   }
 
   const menuItems = [
@@ -115,48 +109,25 @@ const MobileTopbar = ({ }) => {
                     {item.text}
                   </div>
                 ) : (
-                    <div onMouseOver={() => { dispatch(setHover(item.text)) }} onMouseLeave={() => { dispatch(setHover()) }}>
-                      {item.active === (hovering) ? (
-                        <div style={{ color: 'lightgrey', cursor: 'pointer' }}>
-                          {item.text}
-                        </div>
-                      ) : (
-                          <div>
-                            {item.text}
-                          </div>)}
+                    <div>
+                      {item.text}
+                    </div>)}
 
-                    </div>
-                  )}
+
               </div>
             ))}
             <div style={footerStyle}>
-              <div onMouseOver={() => { dispatch(setHover("LinkedIn")) }} onMouseLeave={() => { dispatch(setHover()) }} onClick={() => { window.open("https://linkedin.com/in/spencer-nicholas", "_blank") }}>
-                {(hovering) === 6 ? (
-                  <LinkedIn style={iconHovered} ></LinkedIn>
-                ) : (
-                    <LinkedIn style={iconStyle} ></LinkedIn>
-                  )}
+              <div onClick={() => { window.open("https://linkedin.com/in/spencer-nicholas", "_blank") }}>
+                <LinkedIn style={iconStyle} ></LinkedIn>
               </div>
-              <div onMouseOver={() => { dispatch(setHover("Instagram")) }} onMouseLeave={() => { dispatch(setHover()) }} onClick={() => { window.open("https://www.instagram.com/spencerndev/?hl=en", "_blank") }}>
-                {(hovering) === 7 ? (
-                  <Instagram style={iconHovered}></Instagram>
-                ) : (
-                    <Instagram style={iconStyle}></Instagram>
-                  )}
+              <div onClick={() => { window.open("https://www.instagram.com/spencerndev/?hl=en", "_blank") }}>
+                <Instagram style={iconStyle}></Instagram>
               </div>
-              <div onMouseOver={() => { dispatch(setHover("Twitter")) }} onMouseLeave={() => { dispatch(setHover()) }} onClick={() => { window.open("https://twitter.com/SpencerNDev", "_blank") }}>
-                {(hovering) === 8 ? (
-                  <Twitter style={iconHovered}></Twitter>
-                ) : (
-                    <Twitter style={iconStyle}></Twitter>
-                  )}
+              <div onClick={() => { window.open("https://twitter.com/SpencerNDev", "_blank") }}>
+                <Twitter style={iconStyle}></Twitter>
               </div>
-              <div onMouseOver={() => { dispatch(setHover("GitHub")) }} onMouseLeave={() => { dispatch(setHover()) }} onClick={() => { window.open("https://github.com/SpencerNicholas", "_blank") }}>
-                {(hovering) === 9 ? (
-                  <GitHub style={iconHovered}></GitHub>
-                ) : (
-                    <GitHub style={iconStyle}></GitHub>
-                  )}
+              <div onClick={() => { window.open("https://github.com/SpencerNicholas", "_blank") }}>
+                <GitHub style={iconStyle}></GitHub>
               </div>
             </div>
           </div>

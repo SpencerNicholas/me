@@ -9,17 +9,12 @@ import Travel from '@material-ui/icons/Flight';
 
 
 
-import { useDispatch, useSelector } from 'react-redux';
-import { setPage, selectHover, setHover } from '../../navigation/navigation'
-
 const AboutMobile = ({ styles }) => {
-  const dispatch = useDispatch();
-  const hovering = useSelector(selectHover);
 
   const contentStyle = {
     background: 'linear-gradient(to bottom, lightgray, white)',
     color: '#00363a',
-    paddingTop: '11vh'
+    paddingTop: '12vh'
   };
 
   const mobColumnStyle = {
@@ -49,7 +44,7 @@ const AboutMobile = ({ styles }) => {
         
           <img src={mePic} style={{paddingBottom: '5%', paddingTop: '10%'}}></img><br></br>
           <text style={{ fontSize: '5vw', fontWeight: 'bold', }}> Who am I?</text><br></br><br></br>
-          <div style={{ paddingLeft: '5%', paddingRight: '5%', paddingBottom: '2vh' }}>
+          <div style={{ paddingLeft: '5%', paddingRight: '5%', paddingBottom: '3vh' }}>
             <text  style={{ fontSize: '4vw' }}>
               A highly driven individual seeking graduate employment following completion of my Computer Science degree from Aberystwyth University. Looking to improve on Front-End Web Development skills gained as part of my degree and on industrial placement. Also looking to discover new skills from the professional environment as I start my career.
           </text>

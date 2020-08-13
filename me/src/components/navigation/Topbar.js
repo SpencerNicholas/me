@@ -26,6 +26,7 @@ const Topbar = ({ }) => {
     paddingLeft: '15%',
     alignItems: 'center',
     zIndex: '10',
+    userSelect: 'none',
   };
 
   const menuItemStyle = {
