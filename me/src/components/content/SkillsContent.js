@@ -20,17 +20,20 @@ const SkillsContent = ({ styles }) => {
     width: '80%',
     height: '4vh',
     textAlign: 'center',
-    background: '#006064',
+    background: 'lightgray',
     alignItems: 'center',
     alignText: 'right',
   };
 
   const skillText = {
-    width: '10%',
+    width: '8%',
     display: 'flex',
     alignItems: 'center',
     height: '4vh',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    background: '#428e92',
+    paddingLeft: '2vh',
+    color: 'white'
   }
 
   const rowStyle = {
@@ -47,13 +50,16 @@ const SkillsContent = ({ styles }) => {
 
   return (
     <div style={contentStyle}>
+      <div style={rowStyle}>
+        Intro to skills section
+      </div>
       <div>
       <div style={rowStyle}>
         <div style={skillText}>
           <text> React</text>
         </div>
         <div style={skillBar}>
-        <div style={{background: '#428e92', width: '80%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
+        <div style={{background: '#006064', width: '80%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
           <text style={{paddingRight: '1%', color: 'white'}}> 80%</text>
         </div>
       </div>
@@ -64,7 +70,7 @@ const SkillsContent = ({ styles }) => {
           <text> React Native</text>
         </div>
         <div style={skillBar}>
-        <div style={{background: '#428e92', width: '70%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
+        <div style={{background: '#006064', width: '70%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
           <text style={{paddingRight: '1%', color: 'white'}}> 70%</text>
         </div>
       </div>
@@ -75,7 +81,7 @@ const SkillsContent = ({ styles }) => {
           <text> HTML</text>
         </div>
         <div style={skillBar}>
-        <div style={{background: '#428e92', width: '90%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
+        <div style={{background: '#006064', width: '90%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
           <text style={{paddingRight: '1%', color: 'white'}}> 90%</text>
         </div>
       </div>
@@ -86,7 +92,7 @@ const SkillsContent = ({ styles }) => {
           <text> CSS </text>
         </div>
         <div style={skillBar}>
-        <div style={{background: '#428e92', width: '90%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
+        <div style={{background: '#006064', width: '90%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
           <text style={{paddingRight: '1%', color: 'white'}}> 90%</text>
         </div>
       </div>
@@ -97,7 +103,7 @@ const SkillsContent = ({ styles }) => {
           <text> JavaScript</text>
         </div>
         <div style={skillBar}>
-        <div style={{background: '#428e92', width: '80%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
+        <div style={{background: '#006064', width: '80%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
           <text style={{paddingRight: '1%', color: 'white'}}> 80%</text>
         </div>
       </div>
@@ -108,7 +114,7 @@ const SkillsContent = ({ styles }) => {
           <text> PHP</text>
         </div>
         <div style={skillBar}>
-        <div style={{background: '#428e92', width: '50%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
+        <div style={{background: '#006064', width: '50%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end'}}> 
           <text style={{paddingRight: '1%', color: 'white'}}> 50%</text>
         </div>
       </div>
