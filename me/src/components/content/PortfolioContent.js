@@ -32,13 +32,8 @@ const PortfolioContent = ({ styles }) => {
   return (
     <div style={contentStyle}>
       <div style={columnStyle}>
-        Portfolio
-        </div>
-
-
-      <div style={columnStyle}>
-       Portfolio
-    </div>
+        Track my Friends
+      </div>
     </div>
   );
 };
