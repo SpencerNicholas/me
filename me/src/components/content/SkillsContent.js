@@ -27,7 +27,7 @@ const SkillsContent = ({ styles }) => {
   };
 
   const skillText = {
-    width: '8%',
+    width: '15%',
     display: 'flex',
     alignItems: 'center',
     height: '4vh',
