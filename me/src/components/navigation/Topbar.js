@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { setPage, selectPage, selectHover, setHover, setMenuOpen, selectMenu } from './navigation'
+import { setPage, selectPage, selectHover, setHover, setMenuOpen, selectMenu } from './navigation';
 import Menu from '@material-ui/icons/Menu';
 
 import LinkedIn from '@material-ui/icons/LinkedIn';

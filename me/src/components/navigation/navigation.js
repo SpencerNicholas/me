@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const navigationSlice = createSlice({
     name: 'navigation',
     initialState: {
-        page: 4,
+        page: 5,
         hover: false,
         menu: false,
     },
