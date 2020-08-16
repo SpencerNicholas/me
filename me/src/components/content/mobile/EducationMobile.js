@@ -1,6 +1,6 @@
 import React from "react";
 
-const EducationMobile = ({ styles }) => {
+const EducationMobile = () => {
   const contentStyle = {
     paddingTop: '5vh',
     paddingBottom: '5vh',

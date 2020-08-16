@@ -1,6 +1,6 @@
 import React from "react";
 
-const ExperienceContent = ({ styles }) => {
+const ExperienceContent = () => {
   const contentStyle = {
     paddingTop: '7vh',
     paddingBottom: '5vh',
@@ -20,7 +20,6 @@ const ExperienceContent = ({ styles }) => {
     flexDirection: 'column',
     padding: '2%',
     width: '100%',
-    textAlign: 'center',
     justifyContent: 'space-evenly',
     textAlign: 'left',
   };

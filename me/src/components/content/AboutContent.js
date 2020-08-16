@@ -10,9 +10,9 @@ import WebDev from '@material-ui/icons/WebAsset';
 
 
 import { useDispatch, useSelector } from 'react-redux';
-import { setPage, selectHover, setHover } from '../navigation/navigation';
+import { selectHover, setHover } from '../navigation/navigation';
 
-const AboutContent = ({ styles }) => {
+const AboutContent = () => {
   const dispatch = useDispatch();
   const hovering = useSelector(selectHover);
 
@@ -67,7 +67,7 @@ const AboutContent = ({ styles }) => {
           <text style={{ fontSize: '4em', fontWeight: 'bold', }}>Spencer Nicholas</text><br></br>
           <text style={{ fontSize: '1.5em', fontWeight: 'bold', }}>Web Developer</text><br></br>
         
-          <img src={mePic} style={{paddingBottom: '5%', paddingTop: '5%'}}></img><br></br>
+          <img src={mePic} alt="" style={{paddingBottom: '5%', paddingTop: '5%'}}></img><br></br>
           <text style={{ fontSize: '1.5m', fontWeight: 'bold', }}> Who am I?</text><br></br><br></br>
           <div style={{ paddingLeft: '15%', paddingRight: '15%'}}>
             <text style={{ fontSize: '1em'}}>

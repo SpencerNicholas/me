@@ -1,5 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
-import Sidebar from "./components/navigation/Sidebar";
+import React from 'react';
 import MobileTopbar from "./components/navigation/MobileTopbar";
 
 import AboutContent from "./components/content/AboutContent";
@@ -16,22 +15,14 @@ import PortfolioContentMobile from "./components/content/mobile/PortfolioMobile"
 
 import { useSelector, useDispatch } from 'react-redux';
 import { selectPage } from './components/navigation/navigation'
-import { selectWidth, selectHeight, setWidth, setHeight } from './components/redux/responsiveSlice'
+import { selectWidth, setWidth, setHeight } from './components/redux/responsiveSlice'
 import './App.css';
 import Topbar from './components/navigation/Topbar';
 
-const App = ({ }) => {
+const App = () => {
   const page = useSelector(selectPage);
   const width = useSelector(selectWidth);
-  const height = useSelector(selectHeight);
   const dispatch = useDispatch();
-
-  const styles = {
-    white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-    black: (opacity = 1) => `#00363A`,
-    topBarHeight: 40,
-    footerMenuHeight: 50,
-  };
 
   /**
    * This function runs when the component is loaded. I am using it to get the width a height of the display
@@ -49,39 +40,34 @@ const App = ({ }) => {
 
 
   return (
-    <div
-      style={{
-        backgroundColor: styles.black(0.05),
-        minHeight: "100vh",
-        position: "relative"
-      }}>
+    <div>
       {width > 1000 ? (
         <Topbar />
       ) : (
           <MobileTopbar />
         )}
       {(page === 1 && width > 1000) ? (
-        <AboutContent styles={styles} />
+        <AboutContent  />
       ) : (page === 1 && width < 1000) ? (
-        <AboutContentMobile styles={styles} />
+        <AboutContentMobile  />
       ) : (page === 2 && width > 1000) ? (
-        <ExperienceContent styles={styles} />
+        <ExperienceContent   />
       ) : (page === 2 && width < 1000) ? (
-        <ExperienceContentMobile styles={styles} />
+        <ExperienceContentMobile   />
       ) : (page === 3 && width > 1000) ? (
-        <EducationContent styles={styles} />
+        <EducationContent   />
       ) : (page === 3 && width < 1000) ? (
-        <EducationContentMobile styles={styles} />
+        <EducationContentMobile   />
       ) : (page === 4 && width > 1000) ? (
-        <SkillsContent styles={styles} />
+        <SkillsContent   />
       ) : (page === 4 && width < 1000) ? (
-        <SkillsContentMobile styles={styles} />
+        <SkillsContentMobile   />
       ) : (page === 5 && width > 1000) ? (
-        <PortfolioContent styles={styles} />
+        <PortfolioContent   />
       ) : (page === 5 && width < 1000) ? (
-        <PortfolioContentMobile styles={styles} />
+        <PortfolioContentMobile   />
       ) : (
-                            <AboutContentMobile styles={styles} />
+                            <AboutContentMobile   />
                           )}
     </div>
   );

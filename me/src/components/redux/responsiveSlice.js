@@ -1,5 +1,4 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { setMenuOpen } from '../navigation/navigation';
 
 export const responsiveSlice = createSlice({
     name: 'responsive',

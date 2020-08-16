@@ -7,7 +7,7 @@ import ss4 from "./assets/tmfss4.png"
 import ss5 from "./assets/tmfss5.png"
 import vid from "./assets/tmfvid.mp4"
 
-const trackmyfriends = ({ styles }) => {
+const trackmyfriends = () => {
 
     const contentStyle = {
         paddingTop: '7vh',
@@ -44,11 +44,11 @@ const trackmyfriends = ({ styles }) => {
                     <source src={vid} type='video/mp4' />
                     Your browser does not support the video tag
                 </video>
-                <img src={ss1} style={{ width: '12%' }}></img>
-                <img src={ss2} style={{ width: '12%' }}></img>
-                <img src={ss3} style={{ width: '12%' }}></img>
-                <img src={ss4} style={{ width: '12%' }}></img>
-                <img src={ss5} style={{ width: '12%' }}></img>
+                <img src={ss1} alt="Track my Friends login screen" style={{ width: '12%' }}></img>
+                <img src={ss2} alt="Track my Friends home screen" style={{ width: '12%' }}></img>
+                <img src={ss3} alt="Track my Friends events screen" style={{ width: '12%' }}></img>
+                <img src={ss4} alt="Track my Friends friends screen" style={{ width: '12%' }}></img>
+                <img src={ss5} alt="Track my Friends add friend popup" style={{ width: '12%' }}></img>
             </div>
             <div>
                 <text style={{}}> This project can be found on </text>

@@ -1,7 +1,6 @@
 import React from "react";
 import mePic from "../../../assets/square_me.jpg"
 import Contact from '@material-ui/icons/Email';
-import Copy from '@material-ui/icons/FileCopy';
 import Web from '@material-ui/icons/Web';
 import Mobile from '@material-ui/icons/PhoneAndroid';
 import Uni from '@material-ui/icons/School';
@@ -9,7 +8,7 @@ import Uni from '@material-ui/icons/School';
 
 
 
-const AboutMobile = ({ styles }) => {
+const AboutMobile = () => {
 
   const contentStyle = {
     background: 'linear-gradient(to bottom, lightgray, white)',
@@ -42,7 +41,7 @@ const AboutMobile = ({ styles }) => {
           <text style={{ fontSize: '10vw', fontWeight: 'bold', }}>Spencer Nicholas</text><br></br>
           <text style={{ fontSize: '5vw', fontWeight: 'bold', }}>Web Developer</text><br></br>
         
-          <img src={mePic} style={{paddingBottom: '5%', paddingTop: '10%'}}></img><br></br>
+          <img src={mePic} alt="" style={{paddingBottom: '5%', paddingTop: '10%'}}></img><br></br>
           <text style={{ fontSize: '5vw', fontWeight: 'bold', }}> Who am I?</text><br></br><br></br>
           <div style={{ paddingLeft: '5%', paddingRight: '5%', paddingBottom: '3vh' }}>
             <text  style={{ fontSize: '4vw' }}>

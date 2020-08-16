@@ -9,7 +9,7 @@ import TrackMyFriends from './portfolioProjects/trackmyfriends';
 
 import Back from '@material-ui/icons/ArrowBack';
 
-const PortfolioContent = ({ styles }) => {
+const PortfolioContent = () => {
   const hovering = useSelector(selectHover);
   const displayProject = useSelector(selectPortfolio);
   const dispatch = useDispatch();
@@ -49,18 +49,6 @@ const PortfolioContent = ({ styles }) => {
     cursor: 'pointer',
   }
 
-  const projectDetails = {
-    display: 'flex',
-    flexDirection: 'row',
-    padding: '2%',
-    paddingTop: '5%',
-    width: '100%',
-    minHeight: '10vh',
-    textAlign: 'center',
-    justifyContent: 'space-evenly',
-    background: 'green'
-  }
-
   const ghostTopBar = {
     height: "5vh",
     width: "100%",
@@ -83,12 +71,12 @@ const PortfolioContent = ({ styles }) => {
 
   return (
     <div style={contentStyle}>
-      {displayProject == 'trackmyfriends' ? (
+      {displayProject === 'trackmyfriends' ? (
         <div>
           <div style={ghostTopBar}>
-            {hovering == 'back' ? (
+            {hovering === 'back' ? (
               <Back style={{
-                fontSize: '2em', color: 'white', position: 'absolute', left: '2%', cursor: 'pointer', color: '#b71c1c', transition: 'color 0.5s',
+                fontSize: '2em', position: 'absolute', left: '2%', cursor: 'pointer', color: '#b71c1c', transition: 'color 0.5s',
               }} onClick={() => { dispatch(setPortfolio('none')) }} onMouseOver={() => { dispatch(setHover('back')) }} onMouseLeave={() => { dispatch(setHover()) }}></Back>
             ) : (
                 <Back style={{ fontSize: '2em', color: 'white', position: 'absolute', left: '2%' }} onClick={() => { dispatch(setPortfolio('none')) }} onMouseOver={() => { dispatch(setHover('back')) }} onMouseLeave={() => { dispatch(setHover()) }}></Back>
@@ -99,10 +87,10 @@ const PortfolioContent = ({ styles }) => {
       ) : (
           <div style={rowStyle}>
             <div style={porfolioItem} onMouseOver={() => { dispatch(setHover('trackmyfriends')) }} onMouseLeave={() => { dispatch(setHover()) }} onClick={() => { dispatch(setPortfolio('trackmyfriends')) }}>
-              {hovering == 'trackmyfriends' ? (
-                <img src={tmfLogoHv} style={itemHovered}></img>
+              {hovering === 'trackmyfriends' ? (
+                <img src={tmfLogoHv} alt="Track my Friends" style={itemHovered}></img>
               ) : (
-                  <img src={tmfLogo} style={{ width: '100%', height: '100%' }}></img>
+                  <img src={tmfLogo}  alt="Track my Friends" style={{ width: '100%', height: '100%' }}></img>
                 )
               }
             </div>

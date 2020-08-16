@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setExperience, selectExperience } from '../../redux/experienceSlice'
 
 
-const ExperienceMobile = ({ styles }) => {
+const ExperienceMobile = () => {
   const dispatch = useDispatch();
   const experience = useSelector(selectExperience);
 
@@ -51,7 +51,7 @@ const ExperienceMobile = ({ styles }) => {
 
   return (
     <div style={contentStyle}>
-      {(experience == 'ibm') ? (
+      {(experience === 'ibm') ? (
         <div style={mobColumnStyle}>
           <div style={experienceDetails} >
             <text style={{ fontSize: '4vw', fontWeight: 'bold' }}> Rapid Prototype Developer / European Technical Sales Leadership Support</text><br></br>
@@ -60,7 +60,7 @@ const ExperienceMobile = ({ styles }) => {
           </div>
           <Back style={{ fontSize: '10vw', color: 'black', position: 'absolute', bottom: '2%', paddingLeft: '5%' }} onClick={() => { dispatch(setExperience('none')) }}></Back>
         </div>
-      ) : (experience == 'skylake') ? (
+      ) : (experience === 'skylake') ? (
         <div style={mobColumnStyle}>
           <div style={experienceDetails} >
             <text style={{ fontSize: '4vw', fontWeight: 'bold', }}> Camp Counsellor  </text><br></br>
@@ -69,7 +69,7 @@ const ExperienceMobile = ({ styles }) => {
           </div>
           <Back style={{ fontSize: '10vw', color: 'black', position: 'absolute', bottom: '2%', paddingLeft: '5%' }} onClick={() => { dispatch(setExperience('none')) }}></Back>
         </div>
-      ) : (experience == 'rococo') ? (
+      ) : (experience === 'rococo') ? (
         <div style={mobColumnStyle}>
           <div style={experienceDetails} >
             <text style={{ fontSize: '4vw', fontWeight: 'bold', }}> Senior Waiter </text><br></br>

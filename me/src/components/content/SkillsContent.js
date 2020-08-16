@@ -1,6 +1,6 @@
 import React from "react";
 
-const SkillsContent = ({ styles }) => {
+const SkillsContent = () => {
   const contentStyle = {
     paddingTop: '10vh',
     paddingBottom: '5vh',
@@ -130,7 +130,7 @@ const SkillsContent = ({ styles }) => {
             <text> Node.js</text>
           </div>
           <div style={skillBar}>
-            <div style={{ background: '#006064', width: '60%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end' }}>
+            <div style={{ background: '#006064', width: '50%', height: '100%', alignItems: 'center', display: 'flex', justifyContent: 'flex-end' }}>
               <text style={{ paddingRight: '1%', color: 'white' }}> 50%</text>
             </div>
           </div>

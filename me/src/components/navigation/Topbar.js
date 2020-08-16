@@ -1,7 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { setPage, selectPage, selectHover, setHover, setMenuOpen, selectMenu } from './navigation';
-import Menu from '@material-ui/icons/Menu';
+import { setPage, selectPage, selectHover, setHover } from './navigation';
 
 import LinkedIn from '@material-ui/icons/LinkedIn';
 import Instagram from '@material-ui/icons/Instagram';
@@ -9,7 +8,7 @@ import Twitter from '@material-ui/icons/Twitter';
 import GitHub from '@material-ui/icons/GitHub';
 
 
-const Topbar = ({ }) => {
+const Topbar = () => {
   const hovering = useSelector(selectHover);
   const page = useSelector(selectPage);
   const dispatch = useDispatch();
