@@ -49,6 +49,7 @@ const AboutContent = () => {
     marginLeft: '5%',
     height: '80vh',
     justifyContent: 'space-evenly',
+    minHeight: '0'
   }
 
   const copyToClipboard = (toCopy) => {
