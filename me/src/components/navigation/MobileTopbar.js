@@ -37,6 +37,7 @@ const MobileTopbar = () => {
     flex: '1',
     display: 'flex',
     flexDirection: 'column',
+    zIndex: '10',
   };
 
   const menuItemStyle = {
