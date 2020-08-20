@@ -2,14 +2,13 @@ import React from "react";
 import tmfLogoHv from "../../../assets/portfolio/trackmyfriends/trackmyfriendsLogoHov.png"
 
 import { useSelector, useDispatch } from 'react-redux';
-import { selectHover, setHover, selectPortfolio, setPortfolio } from '../../redux/portfolioSlice';
+import { selectPortfolio, setPortfolio } from '../../redux/portfolioSlice';
 
 import TrackMyFriends from '../portfolioProjects/trackmyfriendsMob';
 
 import Back from '@material-ui/icons/ArrowBack';
 
 const PortfolioMobile = ({ styles }) => {
-  const hovering = useSelector(selectHover);
   const displayProject = useSelector(selectPortfolio);
   const dispatch = useDispatch();
 
