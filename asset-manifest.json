@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/me/static/css/main.0e96c88f.chunk.css",
+    "main.js": "/me/static/js/main.ca8cd973.chunk.js",
+    "main.js.map": "/me/static/js/main.ca8cd973.chunk.js.map",
+    "runtime-main.js": "/me/static/js/runtime-main.8e474a00.js",
+    "runtime-main.js.map": "/me/static/js/runtime-main.8e474a00.js.map",
+    "static/js/2.4a54852d.chunk.js": "/me/static/js/2.4a54852d.chunk.js",
+    "static/js/2.4a54852d.chunk.js.map": "/me/static/js/2.4a54852d.chunk.js.map",
+    "index.html": "/me/index.html",
+    "precache-manifest.80f9a87544fac5787b001f0fd7379ec2.js": "/me/precache-manifest.80f9a87544fac5787b001f0fd7379ec2.js",
+    "service-worker.js": "/me/service-worker.js",
+    "static/css/main.0e96c88f.chunk.css.map": "/me/static/css/main.0e96c88f.chunk.css.map",
+    "static/js/2.4a54852d.chunk.js.LICENSE.txt": "/me/static/js/2.4a54852d.chunk.js.LICENSE.txt",
+    "static/media/aber-small.png": "/me/static/media/aber-small.096a0f02.png",
+    "static/media/aylestone.png": "/me/static/media/aylestone.9039e878.png",
+    "static/media/rococoLogo.jpg": "/me/static/media/rococoLogo.f649fc14.jpg",
+    "static/media/skylakeLogo.jpg": "/me/static/media/skylakeLogo.7eb89ec0.jpg",
+    "static/media/square_me.jpg": "/me/static/media/square_me.e2a06d52.jpg",
+    "static/media/tmfss1.png": "/me/static/media/tmfss1.f0857fb1.png",
+    "static/media/tmfss2.png": "/me/static/media/tmfss2.4915efa6.png",
+    "static/media/tmfss3.png": "/me/static/media/tmfss3.16ab541b.png",
+    "static/media/tmfss4.png": "/me/static/media/tmfss4.dded6e28.png",
+    "static/media/tmfss5.png": "/me/static/media/tmfss5.a304afd6.png",
+    "static/media/tmfvid.mp4": "/me/static/media/tmfvid.062ad93b.mp4",
+    "static/media/trackmyfriendsLogoHov.png": "/me/static/media/trackmyfriendsLogoHov.af3f0c46.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e474a00.js",
+    "static/js/2.4a54852d.chunk.js",
+    "static/css/main.0e96c88f.chunk.css",
+    "static/js/main.ca8cd973.chunk.js"
+  ]
+}
