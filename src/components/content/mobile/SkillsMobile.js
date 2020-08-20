@@ -14,7 +14,7 @@ const SkillsMobile = () => {
     paddingLeft: '10%',
     paddingRight: '10%',
     userSelect: 'none',
-    fontSize: '0.8em'
+    fontSize: '0.9em'
   };
 
   const skillBar = {

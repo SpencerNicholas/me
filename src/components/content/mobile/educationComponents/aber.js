@@ -10,7 +10,7 @@ const aber = () => {
       </div>
 
       <div style={{ padding: '2%', width: '96%',  textAlign: 'left', display: 'flex', flexDirection: 'row' }}>
-        <div style={{ width: '90%', fontSize: '0.8em' }}>
+        <div style={{ width: '90%', fontSize: '0.9em' }}>
           Major Project <br></br>
         Professional Issues in Industry <br></br>
         Computer Graphics and Games <br></br>
@@ -31,7 +31,7 @@ const aber = () => {
         Professional/Personal Development<br></br>
         Intro to Programming
       </div>
-        <div style={{ width: '10%', fontSize: '0.8em' }}>
+        <div style={{ width: '10%', fontSize: '0.9em' }}>
           72% <br></br>
         66%*<br></br>
         78%<br></br>

@@ -10,13 +10,13 @@ const hsfc = () => {
       </div>
 
       <div style={{ padding: '2%', width: '96%',  textAlign: 'left', display: 'flex', flexDirection: 'row' }}>
-        <div style={{ width: '90%', fontSize: '0.8em' }}>
+        <div style={{ width: '90%', fontSize: '0.9em' }}>
         Computing <br></br>
         Geography <br></br>
         Maths <br></br>
         Phyics (AS)
       </div>
-      <div style={{ width: '10%', fontSize: '0.8em' }}>
+      <div style={{ width: '10%', fontSize: '0.9em' }}>
         C <br></br>
         B <br></br>
         D <br></br>
