@@ -78,7 +78,7 @@ const ExperienceMobile = () => {
           </div>
           <div style={experienceDetails} >
             <text style={{ fontSize: '5vw', fontWeight: 'bold', }}> Camp Counsellor  </text><br></br>
-            <text style={{ fontSize: '4vw' }}> Skylake Yosemite Camp (June 2017 - August 2017</text><br></br><br></br>
+            <text style={{ fontSize: '4vw' }}> Skylake Yosemite Camp (June 2017 - August 2017)</text><br></br><br></br>
             <text style={{ fontSize: '3.5vw' }}>During the summer of 2017 I worked at a kid’s camp in America through Camp America. At camp I was responsible for my cabin as well as the tennis instructor. This role involved working in a large team with all the other counsellors to make sure all the kids were looked after and enjoying themselves. I loved working at a Summer Camp as there was a great team spirit across camp</text>
           </div>
         </div>
