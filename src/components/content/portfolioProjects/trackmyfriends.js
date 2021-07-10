@@ -9,15 +9,10 @@ import vid from "./assets/tmfvid.mp4"
 
 const trackmyfriends = () => {
 
-    const contentStyle = {
-        paddingTop: '7vh',
-        paddingBottom: '5vh',
-        flex: '1',
+    const section = {
         display: 'flex',
         flexDirection: 'column',
-        background: 'linear-gradient(to right, white, white)',
-        minHeight: '75vh',
-        color: '#00363a',
+        justifyContent: 'center'
     };
 
     const picRow = {
@@ -27,18 +22,53 @@ const trackmyfriends = () => {
         justifyContent: 'space-evenly',
         paddingTop: '2%',
         paddingBottom: '2%'
-    }
+    };
+
+    const title = {
+        fontSize: '24px',
+        fontWeight: 'bold',
+        userSelect: 'none',
+        color: 'rgb(65,141,146)',
+        fontFamily: 'Poppins'
+    };
+
+    const sub = {
+        fontSize: '18px',
+        fontWeight: 'bold',
+        userSelect: 'none',
+        color: 'rgb(20,20,20)',
+        fontFamily: 'Poppins'
+    };
+
+    const text = {
+        fontSize: '16px',
+        fontWeight: 'bold',
+        userSelect: 'none',
+        color: 'rgb(80,80,80)',
+        fontFamily: 'Poppins'
+    };
+
+    const link = {
+        fontSize: '16px',
+        fontWeight: 'bold',
+        userSelect: 'none',
+        color: 'rgb(20,20,20)',
+        fontFamily: 'Poppins',
+        cursor: 'pointer'
+    };
+
+
 
 
 
     return (
-        <div style={contentStyle}>
-            <text style={{ fontSize: '3em', fontWeight: 'bold', paddingBottom: '1%' }}>Track My Friends </text>
-            <text> Track my Friends is a mobile application created using React Native that helps with the planning of all kinds of events from small parties to large receptions.
-                This project was my first experience with React Native as I created this application for my major project at university. The application is currently functional as a
+        <div style={section}>
+            <text style={title}>Track My Friends </text>
+            <text style={text}> Track my Friends is a mobile application created using React Native that helps with the planning of all kinds of events from small parties to large receptions.
+            This project was my first experience with React Native as I created this application for my major project at university. The application is currently functional as a
             prototype, I have plans to redevelop the app further in the future using the knowledge gained from this project </text><br></br>
 
-            <text style={{ fontStyle: 'italic' }}> Below you can see a short video of the app as well as some screenshots of different pages of the application </text>
+            <text style={text}> Below you can see a short video of the app as well as some screenshots of different pages of the application </text>
             <div style={picRow}>
                 <video width='12%' controls>
                     <source src={vid} type='video/mp4' />
@@ -51,8 +81,8 @@ const trackmyfriends = () => {
                 <img src={ss5} alt="Track my Friends add friend popup" style={{ width: '12%' }}></img>
             </div>
             <div>
-                <text style={{}}> This project can be found on </text>
-                <text style={{ fontWeight: 'bold' }}  onClick={() => { window.open("https://github.com/SpencerNicholas/MMP-Track-my-Friends", "_blank")}}> GitHub </text>
+                <text style={text}> This project can be found on </text>
+                <text style={link} onClick={() => { window.open("https://github.com/SpencerNicholas/MMP-Track-my-Friends", "_blank") }}> GitHub </text>
             </div>
 
         </div>

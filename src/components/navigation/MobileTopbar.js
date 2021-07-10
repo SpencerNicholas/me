@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
-import { setPage, selectPage, setMenuOpen, selectMenu } from './navigation'
+import { setPage, getPage, setMenuOpen, selectMenu } from './navigation'
 import Menu from '@material-ui/icons/Menu';
 
 import LinkedIn from '@material-ui/icons/LinkedIn';
@@ -10,7 +10,7 @@ import GitHub from '@material-ui/icons/GitHub';
 
 
 const MobileTopbar = () => {
-  const page = useSelector(selectPage);
+  const page = useSelector(getPage);
   const menu = useSelector(selectMenu);
   const dispatch = useDispatch();
 

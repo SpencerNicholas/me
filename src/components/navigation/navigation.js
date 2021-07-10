@@ -3,31 +3,33 @@ import { createSlice } from '@reduxjs/toolkit';
 export const navigationSlice = createSlice({
     name: 'navigation',
     initialState: {
-        page: 1,
+        page: null,
         hover: false,
         menu: false,
     },
     reducers: {
         setPage: (state, action) => {
-            switch (action.payload) {
-                case 'ABOUT':
-                    state.page = 1;
-                    break;
-                case 'EXPERIENCE':
-                    state.page = 2;
-                    break;
-                case 'EDUCATION':
-                    state.page = 3;
-                    break;
-                case 'SKILLS':
-                    state.page = 4;
-                    break;
-                case 'PORTFOLIO':
-                    state.page = 5;
-                    break;
-                default:
-                    state.page = 1;
-            }
+            state.page = action.payload
+            // action.payload.current.scrollIntoView()    
+            // switch (action.payload) {
+            //     case 'ABOUT':
+            //         state.page = 1;
+            //         break;
+            //     case 'EXPERIENCE':
+            //         state.page = 2;
+            //         break;
+            //     case 'EDUCATION':
+            //         state.page = 3;
+            //         break;
+            //     case 'SKILLS':
+            //         state.page = 4;
+            //         break;
+            //     case 'PORTFOLIO':
+            //         state.page = 5;
+            //         break;
+            //     default:
+            //         state.page = 1;
+            // }
         },
         setHover: (state, action) => {
             switch (action.payload) {
@@ -73,7 +75,7 @@ export const navigationSlice = createSlice({
 
 export const { setPage, setHover, setMenuOpen } = navigationSlice.actions;
 
-export const selectPage = state => state.navigation.page;
+export const getPage = state => state.navigation.page;
 
 export const selectHover = state => state.navigation.hover;
 
