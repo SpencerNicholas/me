@@ -1,21 +1,17 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.0e96c88f.chunk.css",
-    "main.js": "/me/static/js/main.d0c25bbd.chunk.js",
-    "main.js.map": "/me/static/js/main.d0c25bbd.chunk.js.map",
+    "main.css": "/me/static/css/main.e20e23ac.chunk.css",
+    "main.js": "/me/static/js/main.f612f1a9.chunk.js",
+    "main.js.map": "/me/static/js/main.f612f1a9.chunk.js.map",
     "runtime-main.js": "/me/static/js/runtime-main.8e474a00.js",
     "runtime-main.js.map": "/me/static/js/runtime-main.8e474a00.js.map",
-    "static/js/2.4a54852d.chunk.js": "/me/static/js/2.4a54852d.chunk.js",
-    "static/js/2.4a54852d.chunk.js.map": "/me/static/js/2.4a54852d.chunk.js.map",
+    "static/js/2.878e1a93.chunk.js": "/me/static/js/2.878e1a93.chunk.js",
+    "static/js/2.878e1a93.chunk.js.map": "/me/static/js/2.878e1a93.chunk.js.map",
     "index.html": "/me/index.html",
-    "precache-manifest.c8ea9ca1aa004873ed5132bd4169c56f.js": "/me/precache-manifest.c8ea9ca1aa004873ed5132bd4169c56f.js",
+    "precache-manifest.9042a4ff2cb10ec9152a396ea6c4b91d.js": "/me/precache-manifest.9042a4ff2cb10ec9152a396ea6c4b91d.js",
     "service-worker.js": "/me/service-worker.js",
-    "static/css/main.0e96c88f.chunk.css.map": "/me/static/css/main.0e96c88f.chunk.css.map",
-    "static/js/2.4a54852d.chunk.js.LICENSE.txt": "/me/static/js/2.4a54852d.chunk.js.LICENSE.txt",
-    "static/media/aber-small.png": "/me/static/media/aber-small.096a0f02.png",
-    "static/media/aylestone.png": "/me/static/media/aylestone.9039e878.png",
-    "static/media/rococoLogo.jpg": "/me/static/media/rococoLogo.f649fc14.jpg",
-    "static/media/skylakeLogo.jpg": "/me/static/media/skylakeLogo.7eb89ec0.jpg",
+    "static/css/main.e20e23ac.chunk.css.map": "/me/static/css/main.e20e23ac.chunk.css.map",
+    "static/js/2.878e1a93.chunk.js.LICENSE.txt": "/me/static/js/2.878e1a93.chunk.js.LICENSE.txt",
     "static/media/square_me.jpg": "/me/static/media/square_me.e2a06d52.jpg",
     "static/media/tmfss1.png": "/me/static/media/tmfss1.f0857fb1.png",
     "static/media/tmfss2.png": "/me/static/media/tmfss2.4915efa6.png",
@@ -27,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8e474a00.js",
-    "static/js/2.4a54852d.chunk.js",
-    "static/css/main.0e96c88f.chunk.css",
-    "static/js/main.d0c25bbd.chunk.js"
+    "static/js/2.878e1a93.chunk.js",
+    "static/css/main.e20e23ac.chunk.css",
+    "static/js/main.f612f1a9.chunk.js"
   ]
 }
